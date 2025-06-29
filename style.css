@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+main > section.items {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  max-width: 800px;
+  min-width: 320px;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+main > section.items h4 {
+  text-align: center;
+  margin: 0 0 16px;
+  width: 100%;
+  font-size: 20px;
+  color: #222;
+}
+
+section.items .product {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin: 8px;
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fafafa;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+section.items .product:hover {
+  border-color: #1d86e9;
+  transform: translateY(-2px);
+}
+
+section.items .product.selected {
+  border: 2px solid #1d86e9;
+  background-color: #e6f1fd;
+}
+
+section.items .photo img {
+  max-width: 80px;
+  height: auto;
+}
+
+section.items .description {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+
+.description .price {
+  font-weight: bold;
+  color: #1d86e9;
+  margin-top: 4px;
+}
+
+.description .quantity-area {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quantity-area button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #1d86e9;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.quantity-area button:hover {
+  background-color: #155f9d;
+}
+
+.quantity-area .quantity {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+section.summary {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  min-height: 240px;
+  min-width: 240px;
+}
+
+section.summary h4 {
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+section.summary table {
+  width: 100%;
+  font-size: 13px;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+section.summary td,
+section.summary th {
+  padding: 6px 4px;
+  text-align: left;
+}
+
+section.summary tbody tr:last-of-type th {
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
