@@ -45,3 +45,9 @@ self-service-order/
 ├── script.js
 └── README.md
 ```
+
+## 🧑‍💻 Desenvolvedor
+
+Feito por **[Luiz](https://github.com/seu-usuario)**.
+
+---
